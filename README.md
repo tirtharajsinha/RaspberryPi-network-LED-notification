@@ -1,12 +1,17 @@
 # netcheck service 
 it checks raspberry pi is connected to internet or not 
 
-
-# install
+## Pre Installation steps
 ```
 sudo apt install python3-pip
 pip install RPi.GPIO
 pip install requests
+mkdir .config
+cd netCheck.py .config/netcheck/netcheck.py
+```
+
+# install
+```
 bash install.sh
 ```
 
