@@ -3,6 +3,8 @@ Description=netcheck tool to check internet availablity
 
 [Service]
 ExecStart=/usr/bin/python3 /home/tirthapi/Developer/internet_led_notify/netCheck.py
+User=<user>
+
 
 [Install]
 WantedBy=multi-user.target
