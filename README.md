@@ -4,6 +4,9 @@ it checks raspberry pi is connected to internet or not
 
 # install
 ```
+sudo apt install python3-pip
+pip install RPi.GPIO
+pip install requests
 bash install.sh
 ```
 
