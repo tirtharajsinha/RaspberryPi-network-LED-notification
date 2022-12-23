@@ -8,7 +8,9 @@ pip install RPi.GPIO
 pip install requests
 mkdir .config
 cd netCheck.py .config/netcheck/netcheck.py
+sed 's/<user>/$USER/g' netcheck.service
 ```
+if last command does not work then manually the <user> with your username in netcheck.service
 
 # install
 ```
