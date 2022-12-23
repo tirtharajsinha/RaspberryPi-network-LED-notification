@@ -2,7 +2,12 @@
 it checks raspberry pi is connected to internet or not 
 
 
-## steps : 
+# install
+```
+bash install.sh
+```
+
+## manual install : 
 ```
 sudo cp netcheck.service /etc/systemd/system/
 sudo systemctl start netcheck
@@ -13,3 +18,31 @@ sudo systemctl enable netcheck
 ```
 sudo systemctl status netcheck
 ```
+
+## default pin numbers
+(+) pin : GPIO 21/pin 40
+GND pin : GPIO GND/pin 39
+
+## check pinout
+```
+pinout
+```
+## check pinstate
+```
+raspi-gpio get
+```
+
+
+## Alter GPIO pin state
+### power up
+```
+raspi-gpio set <PIN_number> op pn dh
+```
+### power down
+```
+raspi-gpio set <PIN_NUMBER> op pn dl
+```
+
+
+
+
